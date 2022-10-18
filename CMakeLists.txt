@@ -14,6 +14,8 @@ target_include_directories(stdgenerator
 
 target_compile_features(stdgenerator INTERFACE cxx_std_20)
 
+add_compile_options(-Wall)
+
 enable_testing()
 include(CTest)
 

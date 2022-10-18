@@ -309,7 +309,7 @@ void test_elementsof_with_allocator_args() {
             co_yield std::ranges::elements_of(v, a);
     };
     for(auto && i : with_alloc(std::allocator_arg, {})){
-
+        CHECK(i == 42);
     }
 }
 

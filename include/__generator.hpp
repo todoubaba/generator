@@ -246,8 +246,8 @@ struct elements_of {
     }
 
 private:
-    [[no_unique_address]] _Allocator __alloc; // \expos
     _Rng && __range; // \expos
+    [[no_unique_address]] _Allocator __alloc; // \expos
 };
 
 template <typename _Rng>
